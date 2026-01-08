@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../Components/LenguageContext'; // Updated import path
-import { Heart, Bitcoin, Banknote, CreditCard, Copy, CheckCircle2 } from 'lucide-react';
+import { Bitcoin, Banknote, CreditCard, Copy, CheckCircle2 } from 'lucide-react'; // Removed Heart import
 import Card from '../Components/Ui/Card'; // Updated import path
 import Button from '../Components/Ui/Button'; // Updated import path
 
