@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
 import { useLanguage } from './LenguageContext'; // Corrected import path
-import LanguageSwitcher from './ui/LanguageSwitcher';
+import LanguageSwitcher from './Ui/LanguageSwitcher'; // Corrected import path case
 
 export default function Header() {
   const { t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: t('nav_home'), href: '/Home.js' },
-    { name: t('nav_about'), href: '/About.js' },
+    { name: t('nav_home'), href: '/Home' },
+    { name: t('nav_about'), href: '/About' },
     { name: t('nav_donate'), href: '/Donate' },
-    { name: t('nav_reports'), href: '/Reports.js' },
+    { name: t('nav_reports'), href: '/Reports' },
     { name: t('nav_contacts'), href: '/Contacts' },
   ];
 
