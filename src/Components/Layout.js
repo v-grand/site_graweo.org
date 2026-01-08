@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { LanguageProvider } from './LanguageContext';
+import { LanguageProvider } from './LenguageContext'; // Corrected import path
 
 export default function Layout({ children }) {
   return (

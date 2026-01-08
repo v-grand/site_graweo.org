@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
+import { useLanguage } from './LenguageContext'; // Corrected import path
 import LanguageSwitcher from './ui/LanguageSwitcher';
 
 export default function Header() {
