@@ -9,10 +9,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: t('nav_home'), href: '/Home' },
-    { name: t('nav_about'), href: '/About' },
+    { name: t('nav_home'), href: '/Home.js' },
+    { name: t('nav_about'), href: '/About.js' },
     { name: t('nav_donate'), href: '/Donate' },
-    { name: t('nav_reports'), href: '/Reports' },
+    { name: t('nav_reports'), href: '/Reports.js' },
     { name: t('nav_contacts'), href: '/Contacts' },
   ];
 

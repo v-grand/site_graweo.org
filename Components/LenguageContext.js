@@ -3,19 +3,19 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const translations = {
   en: {
     // Navigation
-    nav_home: "Home",
-    nav_about: "About",
+    nav_home: "Home.js",
+    nav_about: "About.js",
     nav_donate: "Donate",
-    nav_reports: "Reports",
+    nav_reports: "Reports.js",
     nav_contacts: "Contacts",
 
-    // Home page
+    // Home.js page
     hero_title: "Supporting Ukraine",
     hero_subtitle: "Charitable Foundation GRAVEO",
     hero_description: "We provide humanitarian aid, support for IDPs and small businesses affected by the war",
     hero_cta: "Donate Now",
 
-    about_title: "About Foundation",
+    about_title: "About.js Foundation",
     about_description: "GRAVEO is a charitable foundation dedicated to supporting Ukraine during difficult times. We focus on humanitarian aid, helping internally displaced persons, and supporting small businesses.",
 
     directions_title: "Directions of Help",
@@ -36,11 +36,11 @@ const translations = {
     howwework_step4: "Report Results",
     howwework_step4_desc: "Full transparency and accountability",
 
-    latest_reports: "Latest Reports",
+    latest_reports: "Latest Reports.js",
     view_report: "View Report",
-    all_reports: "All Reports",
+    all_reports: "All Reports.js",
 
-    // About page
+    // About.js page
     mission_title: "Our Mission",
     mission_text: "To provide comprehensive support to those affected by the war in Ukraine, restore dignity and hope, and help rebuild lives and businesses.",
 
@@ -88,14 +88,14 @@ const translations = {
     purpose_business: "Small Business Support",
     purpose_other: "Other",
 
-    // Reports page
-    reports_title: "Our Reports",
+    // Reports.js page
+    reports_title: "Our Reports.js",
     reports_subtitle: "Transparency in every step",
     date: "Date",
     read_more: "Read More",
 
     // Report Detail
-    back_to_reports: "Back to Reports",
+    back_to_reports: "Back to Reports.js",
     gallery_title: "Photo Gallery",
 
     // Contacts page

@@ -194,7 +194,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest Reports Section */}
+      {/* Latest Reports.js Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
