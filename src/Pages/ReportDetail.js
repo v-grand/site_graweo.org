@@ -108,7 +108,7 @@ export default function ReportDetail() {
                   <div className="aspect-video bg-gray-100 relative overflow-hidden">
                     <img
                       src={image}
-                      alt={`Report photo ${index + 1}`}
+                      alt={`Report image ${index + 1}`} // Corrected alt text
                       className="w-full h-full object-cover transition-transform group-hover:scale-105"
                     />
                   </div>
