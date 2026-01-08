@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import Layout from '../Layout'; // Assuming Layout.js is at the project root
+import Layout from './Components/Layout'; // Updated import path
 import './index.css'; // We will create this file next
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
