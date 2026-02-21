@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useLanguage } from '../../Components/LenguageContext'; // Updated import path
+import { useLanguage } from '../../Components/LanguageContext';
 import { Globe } from 'lucide-react';
 
 const languages = [

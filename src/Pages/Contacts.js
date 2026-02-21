@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../Components/LenguageContext'; // Updated import path
+import { useLanguage } from '../Components/LanguageContext';
 import { Mail, Send, MapPin, CheckCircle2 } from 'lucide-react';
 import Card from '../Components/Ui/Card'; // Updated import path
 import Button from '../Components/Ui/Button'; // Updated import path

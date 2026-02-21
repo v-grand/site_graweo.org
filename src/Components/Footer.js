@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Mail, Send } from 'lucide-react';
-import { useLanguage } from './LenguageContext'; // Corrected import path
+import { useLanguage } from './LanguageContext';
 
 export default function Footer() {
   const { t } = useLanguage();

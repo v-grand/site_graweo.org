@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../Components/LenguageContext'; // Updated import path
+import { useLanguage } from '../Components/LanguageContext';
 import { Calendar, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import Card from '../Components/Ui/Card'; // Updated import path
 import Button from '../Components/Ui/Button'; // Updated import path

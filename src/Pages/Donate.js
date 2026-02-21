@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../Components/LenguageContext'; // Updated import path
+import { useLanguage } from '../Components/LanguageContext';
 import { Bitcoin, Banknote, CreditCard, Copy, CheckCircle2 } from 'lucide-react'; // Removed Heart import
 import Card from '../Components/Ui/Card'; // Updated import path
 import Button from '../Components/Ui/Button'; // Updated import path
@@ -10,8 +10,8 @@ export default function Donate() {
   const [selectedPurpose, setSelectedPurpose] = useState('humanitarian');
 
   const cryptoAddresses = {
-    bitcoin: 'bc1q... (Example BTC Address)',
-    ethereum: '0x... (Example ETH Address)',
+    bitcoin: process.env.REACT_APP_BITCOIN_ADDRESS || 'bc1q... (Example BTC Address)',
+    ethereum: process.env.REACT_APP_ETHEREUM_ADDRESS || '0x... (Example ETH Address)',
   };
 
   const copyToClipboard = (text) => {
@@ -91,13 +91,15 @@ export default function Donate() {
               <div className="space-y-4">
                 <div>
                   <p className="text-sm font-semibold text-gray-700 mb-1">{t('bank_ukraine')}</p>
-                  <p className="text-sm text-gray-600">IBAN: UA000000000000000000000000000</p>
-                  <p className="text-sm text-gray-600">SWIFT: EXAMPLEUA</p>
+                  <p className="text-sm text-gray-600">Account: {process.env.REACT_APP_UKRAINE_ACCOUNT || 'UA000000000000000000000000000'}</p>
+                  <p className="text-sm text-gray-600">Bank: {process.env.REACT_APP_UKRAINE_BANK || 'Example Bank Ukraine'}</p>
+                  <p className="text-sm text-gray-600">SWIFT: {process.env.REACT_APP_UKRAINE_SWIFT || 'EXAMPLEUA'}</p>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-700 mb-1">{t('bank_poland')}</p>
-                  <p className="text-sm text-gray-600">IBAN: PL00000000000000000000000000</p>
-                  <p className="text-sm text-gray-600">SWIFT: EXAMPLEPL</p>
+                  <p className="text-sm text-gray-600">IBAN: {process.env.REACT_APP_POLAND_IBAN || 'PL00000000000000000000000000'}</p>
+                  <p className="text-sm text-gray-600">Bank: {process.env.REACT_APP_POLAND_BANK || 'Example Bank Polska'}</p>
+                  <p className="text-sm text-gray-600">SWIFT: {process.env.REACT_APP_POLAND_SWIFT || 'EXAMPLEPL'}</p>
                 </div>
               </div>
             </Card>
