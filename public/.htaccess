@@ -1,0 +1,61 @@
+# Enable gzip compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Set correct content types for XML files
+<FilesMatch "\.(xml)$">
+  AddType application/xml .xml
+  AddCharset utf-8 .xml
+</FilesMatch>
+
+# Ensure sitemap.xml is served with correct Content-Type
+<Files "sitemap.xml">
+  AddType application/xml .xml
+  Header set Content-Type "application/xml; charset=utf-8"
+</Files>
+
+# Ensure robots.txt is served correctly
+<Files "robots.txt">
+  AddType text/plain .txt
+  Header set Content-Type "text/plain; charset=utf-8"
+</Files>
+
+# React Router - Rewrite all requests to index.html except for real files/directories
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  # Allow sitemap.xml and robots.txt to be served directly
+  RewriteCond %{REQUEST_URI} !^/sitemap\.xml$
+  RewriteCond %{REQUEST_URI} !^/robots\.txt$
+  RewriteCond %{REQUEST_URI} !^/favicon\.ico$
+  RewriteRule . /index.html [QSA,L]
+</IfModule>
+
+# Cache control
+<IfModule mod_headers.c>
+  # Cache static assets
+  <FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+
+  # Don't cache HTML
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=3600, public"
+  </FilesMatch>
+
+  # Always revalidate XML files
+  <FilesMatch "\.(xml)$">
+    Header set Cache-Control "max-age=3600, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
