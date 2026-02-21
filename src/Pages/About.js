@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../Components/LenguageContext'; // Updated import path
+import { useLanguage } from '../Components/LanguageContext';
 import { Target, Eye, Scale, MapPin, Building2, CreditCard } from 'lucide-react';
 import Card from '../Components/Ui/Card'; // Updated import path
 
@@ -144,15 +144,15 @@ export default function About() {
               <div className="space-y-4 text-sm">
                 <div>
                   <div className="font-semibold text-gray-700 mb-1">{t('requisites_account')}</div>
-                  <div className="text-gray-600 font-mono">UA000000000000000000000000000</div>
+                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_UKRAINE_ACCOUNT || 'UA000000000000000000000000000'}</div>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-700 mb-1">{t('requisites_bank')}</div>
-                  <div className="text-gray-600">Example Bank Ukraine</div>
+                  <div className="text-gray-600">{process.env.REACT_APP_UKRAINE_BANK || 'Example Bank Ukraine'}</div>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-700 mb-1">{t('requisites_swift')}</div>
-                  <div className="text-gray-600 font-mono">EXAMPLEUA</div>
+                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_UKRAINE_SWIFT || 'EXAMPLEUA'}</div>
                 </div>
               </div>
             </Card>
@@ -168,15 +168,15 @@ export default function About() {
               <div className="space-y-4 text-sm">
                 <div>
                   <div className="font-semibold text-gray-700 mb-1">{t('requisites_iban')}</div>
-                  <div className="text-gray-600 font-mono">PL00000000000000000000000000</div>
+                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_POLAND_IBAN || 'PL00000000000000000000000000'}</div>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-700 mb-1">{t('requisites_bank')}</div>
-                  <div className="text-gray-600">Example Bank Polska</div>
+                  <div className="text-gray-600">{process.env.REACT_APP_POLAND_BANK || 'Example Bank Polska'}</div>
                 </div>
                 <div>
                   <div className="font-semibold text-gray-700 mb-1">{t('requisites_swift')}</div>
-                  <div className="text-gray-600 font-mono">EXAMPLEPL</div>
+                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_POLAND_SWIFT || 'EXAMPLEPL'}</div>
                 </div>
               </div>
             </Card>
