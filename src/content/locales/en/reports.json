@@ -1,0 +1,25 @@
+{
+  "title": "Reports",
+  "meta": {
+    "description": "Browse all reports from Graweo",
+    "keywords": "reports, analysis, monitoring, data"
+  },
+  "hero": {
+    "title": "Reports",
+    "subtitle": "Global Analysis and Monitoring"
+  },
+  "sections": {
+    "intro": {
+      "title": "Our Reports",
+      "content": "Comprehensive reports on global developments, trends, and analysis based on real-time monitoring."
+    },
+    "filters": {
+      "title": "Filter Reports",
+      "placeholder": "Search reports..."
+    },
+    "empty": {
+      "title": "No reports found",
+      "message": "Check back soon for new reports"
+    }
+  }
+}

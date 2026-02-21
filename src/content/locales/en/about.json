@@ -1,0 +1,42 @@
+{
+  "title": "About Graweo",
+  "meta": {
+    "description": "Learn more about Graweo - Global Reporting and Web Observatory",
+    "keywords": "about, graweo, mission, team, history"
+  },
+  "hero": {
+    "title": "About Graweo",
+    "subtitle": "Our Story and Mission"
+  },
+  "sections": {
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide transparent, reliable, and accessible global monitoring and reporting services that empower individuals and organizations with accurate information."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "A world where information flows freely and truthfully, enabling informed decision-making at all levels of society."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        {
+          "title": "Transparency",
+          "description": "We operate with complete transparency in our methods and findings"
+        },
+        {
+          "title": "Accuracy",
+          "description": "We maintain the highest standards of accuracy in all reporting"
+        },
+        {
+          "title": "Independence",
+          "description": "We maintain editorial independence and objectivity"
+        },
+        {
+          "title": "Accessibility",
+          "description": "We make our reports accessible to everyone"
+        }
+      ]
+    }
+  }
+}

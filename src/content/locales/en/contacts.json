@@ -1,0 +1,39 @@
+{
+  "title": "Contact Us",
+  "meta": {
+    "description": "Get in touch with Graweo",
+    "keywords": "contact, support, reach out"
+  },
+  "hero": {
+    "title": "Get in Touch",
+    "subtitle": "Contact Graweo"
+  },
+  "sections": {
+    "intro": {
+      "title": "We'd love to hear from you",
+      "content": "Have a question, suggestion, or want to partner with us? Reach out to our team."
+    },
+    "contact_info": {
+      "email": {
+        "label": "Email",
+        "value": "info@graweo.org"
+      },
+      "address": {
+        "label": "Address",
+        "value": "Global Contact"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "Available upon request"
+      }
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+}
