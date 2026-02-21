@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../Components/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 import { Mail, Send, MapPin, CheckCircle2 } from 'lucide-react';
-import Card from '../Components/Ui/Card'; // Updated import path
-import Button from '../Components/Ui/Button'; // Updated import path
+import Card from '../components/ui/Card';
+import Button from '../components/ui/Button';
 
 export default function Contacts() {
   const { t } = useLanguage();

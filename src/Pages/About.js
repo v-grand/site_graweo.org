@@ -1,7 +1,7 @@
 import React from 'react';
-import { useLanguage } from '../Components/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 import { Target, Eye, Scale, MapPin, Building2, CreditCard } from 'lucide-react';
-import Card from '../Components/Ui/Card'; // Updated import path
+import Card from '../components/ui/Card';
 
 export default function About() {
   const { t } = useLanguage();

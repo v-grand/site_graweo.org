@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
-import { useLanguage } from './LanguageContext';
-import LanguageSwitcher from './Ui/LanguageSwitcher'; // Corrected import path case
+import { useLanguage } from '../../context/LanguageContext';
+import LanguageSwitcher from '../ui/LanguageSwitcher';
 
 export default function Header() {
   const { t } = useLanguage();
