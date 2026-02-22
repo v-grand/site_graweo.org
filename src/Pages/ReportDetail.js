@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../Components/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 import { Calendar, ArrowLeft, Image as ImageIcon } from 'lucide-react';
-import Card from '../Components/Ui/Card'; // Updated import path
-import Button from '../Components/Ui/Button'; // Updated import path
+import Card from '../components/ui/Card';
+import Button from '../components/ui/Button';
 
 export default function ReportDetail() {
   const { t } = useLanguage();

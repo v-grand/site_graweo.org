@@ -1,0 +1,35 @@
+{
+  "title": "Graweo - Global Reporting and Web Observatory",
+  "meta": {
+    "description": "Global Reporting and Web Observatory platform",
+    "keywords": "reporting, observatory, global, monitoring"
+  },
+  "hero": {
+    "title": "Welcome to Graweo",
+    "subtitle": "Global Reporting and Web Observatory",
+    "cta": "Explore Reports"
+  },
+  "sections": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "Providing transparent global reporting and monitoring services"
+    },
+    "features": {
+      "title": "Key Features",
+      "items": [
+        {
+          "title": "Global Coverage",
+          "description": "Track information from across the world"
+        },
+        {
+          "title": "Real-time Updates",
+          "description": "Get the latest information instantly"
+        },
+        {
+          "title": "Transparent Data",
+          "description": "Access reliable and verified data"
+        }
+      ]
+    }
+  }
+}

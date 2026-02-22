@@ -1,7 +1,7 @@
 import React from 'react';
-import { useLanguage } from '../Components/LanguageContext';
-import { Target, Eye, Scale, MapPin, Building2, CreditCard } from 'lucide-react';
-import Card from '../Components/Ui/Card'; // Updated import path
+import { useLanguage } from '../context/LanguageContext';
+import { Target, Eye, Scale, MapPin, Building2 } from 'lucide-react';
+import Card from '../components/ui/Card';
 
 export default function About() {
   const { t } = useLanguage();
@@ -98,25 +98,24 @@ export default function About() {
                 <Scale className="w-6 h-6 text-[#1e3a5f] flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-semibold text-gray-900 mb-1">{t('legal_registration')}</div>
-                  <div className="text-gray-600">UA-12345678 (Example)</div>
+                  <div className="text-gray-600">Foundation Registration Number (Example)</div>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-[#1e3a5f] flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-semibold text-gray-900 mb-1">{t('legal_country')}</div>
-                  <div className="text-gray-600">Ukraine / Poland</div>
+                  <div className="text-gray-600">European Union</div>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-[#1e3a5f] flex-shrink-0 mt-1" />
                 <div>
                   <div className="font-semibold text-gray-900 mb-1">{t('legal_address')}</div>
                   <div className="text-gray-600">
-                    <div>UA: Kyiv, Ukraine (Example Address)</div>
-                    <div className="mt-1">PL: Warsaw, Poland (Example Address)</div>
+                    <div>Head Office: European Union (Example Address)</div>
                   </div>
                 </div>
               </div>
@@ -125,64 +124,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Bank Requisites */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">
-            {t('requisites_title')}
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Ukraine */}
-            <Card className="p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <CreditCard className="w-6 h-6 text-[#1e3a5f]" />
-                <h3 className="text-xl font-bold text-gray-900">
-                  {t('requisites_ukraine')}
-                </h3>
-              </div>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <div className="font-semibold text-gray-700 mb-1">{t('requisites_account')}</div>
-                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_UKRAINE_ACCOUNT || 'UA000000000000000000000000000'}</div>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-700 mb-1">{t('requisites_bank')}</div>
-                  <div className="text-gray-600">{process.env.REACT_APP_UKRAINE_BANK || 'Example Bank Ukraine'}</div>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-700 mb-1">{t('requisites_swift')}</div>
-                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_UKRAINE_SWIFT || 'EXAMPLEUA'}</div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Poland */}
-            <Card className="p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <CreditCard className="w-6 h-6 text-[#1e3a5f]" />
-                <h3 className="text-xl font-bold text-gray-900">
-                  {t('requisites_poland')}
-                </h3>
-              </div>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <div className="font-semibold text-gray-700 mb-1">{t('requisites_iban')}</div>
-                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_POLAND_IBAN || 'PL00000000000000000000000000'}</div>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-700 mb-1">{t('requisites_bank')}</div>
-                  <div className="text-gray-600">{process.env.REACT_APP_POLAND_BANK || 'Example Bank Polska'}</div>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-700 mb-1">{t('requisites_swift')}</div>
-                  <div className="text-gray-600 font-mono">{process.env.REACT_APP_POLAND_SWIFT || 'EXAMPLEPL'}</div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

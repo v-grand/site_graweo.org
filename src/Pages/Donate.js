@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../Components/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 import { Bitcoin, Banknote, CreditCard, Copy, CheckCircle2 } from 'lucide-react'; // Removed Heart import
-import Card from '../Components/Ui/Card'; // Updated import path
-import Button from '../Components/Ui/Button'; // Updated import path
+import Card from '../components/ui/Card';
+import Button from '../components/ui/Button';
 
 export default function Donate() {
   const { t } = useLanguage();
@@ -86,22 +86,11 @@ export default function Donate() {
                 {t('bank_title')}
               </h3>
               <p className="text-gray-600 mb-6">
-                {t('requisites_title')}
+                {t('card_coming_soon')}
               </p>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm font-semibold text-gray-700 mb-1">{t('bank_ukraine')}</p>
-                  <p className="text-sm text-gray-600">Account: {process.env.REACT_APP_UKRAINE_ACCOUNT || 'UA000000000000000000000000000'}</p>
-                  <p className="text-sm text-gray-600">Bank: {process.env.REACT_APP_UKRAINE_BANK || 'Example Bank Ukraine'}</p>
-                  <p className="text-sm text-gray-600">SWIFT: {process.env.REACT_APP_UKRAINE_SWIFT || 'EXAMPLEUA'}</p>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-gray-700 mb-1">{t('bank_poland')}</p>
-                  <p className="text-sm text-gray-600">IBAN: {process.env.REACT_APP_POLAND_IBAN || 'PL00000000000000000000000000'}</p>
-                  <p className="text-sm text-gray-600">Bank: {process.env.REACT_APP_POLAND_BANK || 'Example Bank Polska'}</p>
-                  <p className="text-sm text-gray-600">SWIFT: {process.env.REACT_APP_POLAND_SWIFT || 'EXAMPLEPL'}</p>
-                </div>
-              </div>
+              <Button variant="primary" disabled className="w-full">
+                {t('requisites_title')}
+              </Button>
             </Card>
 
             {/* Card Payment */}

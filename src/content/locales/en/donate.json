@@ -1,0 +1,34 @@
+{
+  "title": "Support Graweo",
+  "meta": {
+    "description": "Support our mission by donating to Graweo",
+    "keywords": "donate, support, contribute"
+  },
+  "hero": {
+    "title": "Support Our Mission",
+    "subtitle": "Help us continue providing transparent global reporting"
+  },
+  "sections": {
+    "intro": {
+      "title": "Your Support Matters",
+      "content": "Help us maintain our independence and continue bringing you accurate, unbiased global reporting."
+    },
+    "methods": {
+      "title": "Ways to Contribute",
+      "items": [
+        {
+          "title": "One-time Donation",
+          "description": "Make a single contribution of any amount"
+        },
+        {
+          "title": "Monthly Supporter",
+          "description": "Become a sustaining member with monthly donations"
+        },
+        {
+          "title": "Corporate Partnership",
+          "description": "Partner with us to support our mission"
+        }
+      ]
+    }
+  }
+}
